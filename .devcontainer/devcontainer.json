@@ -4,17 +4,21 @@
 	"features": {
 		"ghcr.io/robbert229/devcontainer-features/opentofu:1": {}
 	},
-
 	"customizations": {
 		"vscode": {
-		"extensions": ["hashicorp.terraform"],
-		"settings": {
-			"terraform.languageServer": {
-			"enabled": true,
-			"args": []
+			"extensions": [
+				"hashicorp.terraform"
+			],
+			"settings": {
+				"terraform.languageServer": {
+					"enabled": true,
+					"args": []
+				}
 			}
 		}
-		}
 	},
-	"runArgs": ["--name", "hephaestus-workshop"]
+	"runArgs": [
+		"--name",
+		"hephaestus-workshop"
+	]
 }
