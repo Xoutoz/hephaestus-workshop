@@ -1,0 +1,21 @@
+{
+	"name": "Hephaestus Workshop",
+	"image": "mcr.microsoft.com/devcontainers/base:bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/terraform:1": {},
+		"ghcr.io/devcontainers-contrib/features/terraform-docs:1": {}
+	},
+
+	"customizations": {
+		"vscode": {
+		"extensions": ["hashicorp.terraform"],
+		"settings": {
+			"terraform.languageServer": {
+			"enabled": true,
+			"args": []
+			}
+		}
+		}
+	},
+    "runArgs": ["--name", "hephaestus-workshop"]
+}
